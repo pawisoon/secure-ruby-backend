@@ -1,5 +1,13 @@
 # secure-ruby-backend
 
+- Why do I need this? 
+A: When I started creating first iOS and Android apps that needed some kind of user registration, I realised there's no ready-to-run script available. Parse was really cool but its terminating really soon. 
+Here you have it. Single file, secure and fast scrpt to handle requests from your apps.
+
+- What does it use? 
+A:Passwords secured by SHA512 and some salt(just for the flavour :D )
+
+#Ready? Let's go!
 
 - Install all dependencies:
 
@@ -51,3 +59,9 @@ Sing in:
 ```
 curl -i -X POST -H 'Content-Type: application/json' -d '{"tag":"login","email":"test@gmail.com","password":"123"}' http://localhost:4567/mobilelogin
 ```
+
+#TODO:
+
+- Simple project for iOS and Android which will show the basic usage of script. 
+- iOS/Android push notifications with Azure Cloud
+- ... 
