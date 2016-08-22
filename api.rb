@@ -77,8 +77,7 @@ def register_new_user(name,email,password)
 		pst.close if pst
 	end
 end
-#login curl -i -X POST -H 'Content-Type: application/json' -d '{"tag":"login","email":"pawi552@gmail.com","password":"123"}' http://localhost:4567/mobilelogin
-#register curl -i -X POST -H 'Content-Type: application/json' -d '{"tag":"register","name":"Pawel","email":"pawi552@gmail.com","password":"123"}' http://localhost:4567/mobilelogin
+
 post '/mobilelogin' do
 	values = JSON.parse(request.env["rack.input"].read)
 	if values["tag"]=="login"
