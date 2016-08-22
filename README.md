@@ -1,14 +1,14 @@
 # secure-ruby-backend
 
 
-1. Install all dependencies:
+- Install all dependencies:
 
 ```
 sudo apt-get upgrade; sudo apt-get install gem; sudo apt-get install rubygems; sudo gem install ruby-full; sudo gem install rubygems-update;sudo gem install sinatra; sudo gem install base64; sudo gem install json; sudo gem install mysql; sudo gem install digest;sudo gem install securerandom;
 
 ```
 
-2. Create database.. 
+- Create database.. 
 
 ```
 mysql -u root -p
@@ -35,7 +35,7 @@ CREATE DATABASE myservice;
 
 ```
 
-Now run it :) 
+- Now run it :) 
 
 ```
 sudo ruby api.rb -o 0.0.0.0
