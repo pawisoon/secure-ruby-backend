@@ -1,7 +1,7 @@
 # secure-ruby-backend
-Readme
 
-1. Install all dependences: 
+
+1. Install all dependencies:
 
 ```
 sudo apt-get upgrade; sudo apt-get install gem; sudo apt-get install rubygems; sudo gem install ruby-full; sudo gem install rubygems-update;sudo gem install sinatra; sudo gem install base64; sudo gem install json; sudo gem install mysql; sudo gem install digest;sudo gem install securerandom;
@@ -39,4 +39,15 @@ Now run it :)
 
 ```
 sudo ruby api.rb -o 0.0.0.0
+```
+#Test it: 
+
+Register:
+```
+curl -i -X POST -H 'Content-Type: application/json' -d '{"tag":"register","name":"Tester","email":"test@gmail.com","password":"123"}' http://localhost:4567/mobilelogin
+```
+
+Sing in:
+```
+curl -i -X POST -H 'Content-Type: application/json' -d '{"tag":"login","email":"test@gmail.com","password":"123"}' http://localhost:4567/mobilelogin
 ```
